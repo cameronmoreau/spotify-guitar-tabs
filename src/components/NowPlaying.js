@@ -24,10 +24,11 @@ const NowPlaying = ({ token }) => {
   );
 
   return (
-    <div>
-      <div>Now Playing</div>
-      <DisplaySong data={spotifyData} />
-      <DisplayTabs results={tabsData?.results} />
+    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-8">
+      <div className="flex">
+        <DisplaySong data={spotifyData} />
+        <DisplayTabs results={tabsData?.results} />
+      </div>
     </div>
   );
 };
